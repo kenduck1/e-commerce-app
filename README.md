@@ -13,9 +13,9 @@ This project is a pixel-perfect replica of a sample e-commerce website built wit
 ## Tech Stack
 
 - **Frontend**: Next.js, NextUI, Tailwind CSS
-- **Backend**: MikroORM with SQLite for database management
+- **Backend**: MikroORM with SQLite for database management (database is stored locally)
 - **Deployment**: Vercel
-
+  
 ## Installation and Setup
 
 1. Clone the repository:
@@ -66,19 +66,3 @@ To deploy it yourself, follow these steps:
 - `/public`: Static assets such as images.
 - `/styles`: Global styles and CSS files.
 - `/scripts`: Scripts for initializing and managing the database.
-
-## Environment Variables
-
-If your project uses environment variables, add them to a `.env.local` file in the root directory. Example:
-
-```plaintext
-DATABASE_URL=your-database-url
-```
-
-## Contributing
-
-Contributions are welcome! Feel free to submit a pull request or open an issue.
-
-## License
-
-This project is licensed under the MIT License.
