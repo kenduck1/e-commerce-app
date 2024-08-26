@@ -15,7 +15,7 @@ export default function ProductCard({ product }) {
   return (
     <Link href={`/product/${product.id}`} passHref>
       <Card
-        variant="bordered"
+        // variant="bordered"
         css={{
           mw: "400px",
           cursor: "pointer",
@@ -28,7 +28,6 @@ export default function ProductCard({ product }) {
           <Image
             src={product.imageUrl}
             alt={product.name}
-            objectFit="cover"
             width="100%"
             height="100%"
             css={{

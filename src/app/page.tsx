@@ -11,10 +11,7 @@ export default async function HomePage() {
 
   return (
     <div className="container mx-auto p-4">
-      {/* Featured Product Section */}
       <div className="mb-8 max-w-screen-lg mx-auto">
-        {" "}
-        {/* Same max width as grid */}
         <Link href={`/product/${featuredProduct.id}`} passHref>
           <Card className="rounded-lg shadow-lg overflow-hidden cursor-pointer">
             <div className="relative w-full h-0 pb-[50%] overflow-hidden">
@@ -28,7 +25,6 @@ export default async function HomePage() {
         </Link>
       </div>
 
-      {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-screen-lg mx-auto">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
