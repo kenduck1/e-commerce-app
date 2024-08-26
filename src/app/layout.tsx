@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { NextUIProvider } from "@nextui-org/system";
+import NavBar from "../components/NavBar";
+import { CartProvider } from "@/context/CartContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NextUIProvider>
+          <CartProvider>
+            <NavBar />
+            {children}
+          </CartProvider>
+        </NextUIProvider>
+      </body>
     </html>
   );
 }
